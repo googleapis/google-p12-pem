@@ -35,6 +35,12 @@ var pem = gp12('/path/to/key.p12');
 console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
 ```
 
+### CLI
+
+``` sh
+gp12-pem myfile.p12 > output.pem
+```
+
 ## License
 
 MIT
