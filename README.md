@@ -2,6 +2,8 @@
 
 Convert Google `.p12` keys to `.pem` keys.
 
+[![Build Status](https://travis-ci.org/ryanseys/google-p12-pem.svg?branch=travis)](https://travis-ci.org/ryanseys/google-p12-pem)
+
 ## Installation
 
 ``` sh
