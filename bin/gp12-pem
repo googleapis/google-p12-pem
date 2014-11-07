@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var chalk = require('chalk');
+var gp12 = require('../');
+var argv = process.argv;
+var p12Path = argv[2];
+
+if (!p12Path) {
+  console.error(chalk.red('Please specify a *.p12 file to convert.'));
+  process.exit(1);
+}
+
+p12Path = path.join(process.cwd(), p12Path);
+
+gp12(p12Path, function(err, pem) {
+  if (err) {
+    console.log(chalk.red(err));
+    process.exit(1);
+  } else {
+    console.log(pem);
+  }
+});
