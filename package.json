@@ -12,7 +12,7 @@
   "author": "Ryan Seys",
   "license": "MIT",
   "dependencies": {
-    "node-forge": "0.6.16"
+    "node-forge": "^0.6.33"
   },
   "devDependencies": {
     "mocha": "2.0.1"
