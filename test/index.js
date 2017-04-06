@@ -17,7 +17,7 @@ describe('GoogleP12Pem', function() {
     gp12pem('./badfilename.p12', function(err, pem) {
       assert(err);
       assert.equal(pem, null);
-      assert.equal(err.message, "ENOENT, open './badfilename.p12'");
+      assert.ok(err.message.startsWith("ENOENT"));
       done();
     });
   });
