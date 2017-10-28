@@ -1,5 +1,8 @@
 import * as fs from 'fs';
 import * as forge from 'node-forge';
+import * as pify from 'pify';
+
+const readFile = pify(fs.readFile);
 
 /**
  * Convert a .p12 file to .pem string
@@ -25,18 +28,8 @@ export function getPem(
 }
 
 function getPemAsync(filename: string) {
-  return new Promise<string>((resolve, reject) => {
-    fs.readFile(filename, {encoding: 'base64'}, (err, keyp12) => {
-      if (err) {
-        return reject(err);
-      }
-      try {
-        const pem = convertToPem(keyp12);
-        return resolve(pem);
-      } catch (e) {
-        return reject(e);
-      }
-    });
+  return readFile(filename, {encoding: 'base64'}).then(keyp12 => {
+    return convertToPem(keyp12);
   });
 }
 
