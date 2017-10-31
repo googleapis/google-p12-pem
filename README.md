@@ -12,35 +12,41 @@ npm install google-p12-pem
 
 ## Usage
 
-### Asynchronous
+### async/await style
+```js
+const gp12 = require('google-p12-pem');
+async function getPem() {
+  const pem = await gp12.getPem('/path/to/key.p12');
+  console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
+}
+```
 
-``` js
-var gp12 = require('google-p12-pem');
-gp12('/path/to/key.p12', function(err, pem) {
-  if (err) {
-    console.log(err);
-  } else {
+### promise style
+```js
+const gp12 = require('google-p12-pem');
+gp12.getPem('/path/to/key.p12')
+  .then(pem => {
     console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
-  }
+  })
+  .catch(err => {
+    console.error(err); // :(
+  });
+
+```
+
+### callback style
+```js
+const gp12 = require('google-p12-pem');
+gp12.getPem('/path/to/key.p12', function(err, pem) {
+  console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
 });
 ```
 
-### Synchronous
-
-Note: If an error occurs and the callback is omitted, it will **throw** the error.
-
-``` js
-var gp12 = require('google-p12-pem');
-var pem = gp12('/path/to/key.p12');
-console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
-```
-
-### CLI
+### CLI style
 
 ``` sh
 gp12-pem myfile.p12 > output.pem
 ```
 
 ## License
-
-MIT
+[MIT](LICENSE)
