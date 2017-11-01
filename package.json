@@ -36,6 +36,6 @@
     "@types/pify": "^3.0.0",
     "gts": "latest",
     "mocha": "^4.0.0",
-    "typescript": "^2.5.3"
+    "typescript": "~2.6.0"
   }
 }

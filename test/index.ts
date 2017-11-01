@@ -13,11 +13,13 @@ describe('GoogleP12Pem', () => {
   });
 
   it('should provide error on bad filename and callback', done => {
-    getPem('./badfilename.p12', (err: Error, pem: string) => {
+    getPem('./badfilename.p12', (err, pem) => {
       assert(err);
       assert.equal(pem, null);
-      assert.ok(err.message.startsWith('ENOENT'));
-      done();
+      if (err) {
+        assert.ok(err.message.startsWith('ENOENT'));
+        done();
+      }
     });
   });
 
@@ -43,16 +45,18 @@ describe('GoogleP12Pem', () => {
 
   it('should return error on bad .p12 in callback', done => {
     assert.doesNotThrow(() => {
-      getPem(BADP12FILE, (err: Error, pem: string) => {
-        assert.equal(null, null);
-        assert(err.message.indexOf('Too few bytes to read') > -1);
-        done();
+      getPem(BADP12FILE, (err, pem) => {
+        assert(err);
+        if (err) {
+          assert(err.message.indexOf('Too few bytes to read') > -1);
+          done();
+        }
       });
     });
   });
 
   it('should work async when provided a callback', done => {
-    getPem(GOODP12FILE, (err: Error, pem: string) => {
+    getPem(GOODP12FILE, (err, pem) => {
       assert.ifError(err);
       assert.equal(expectedPem, pem);
       done();
