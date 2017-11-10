@@ -20,17 +20,17 @@ npm install google-p12-pem
 
 ### async/await style
 ```js
-const gp12 = require('google-p12-pem');
-async function getPem() {
-  const pem = await gp12.getPem('/path/to/key.p12');
+const {getPem} = require('google-p12-pem');
+async function foo() {
+  const pem = await getPem('/path/to/key.p12');
   console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
 }
 ```
 
 ### promise style
 ```js
-const gp12 = require('google-p12-pem');
-gp12.getPem('/path/to/key.p12')
+const {getPem} = require('google-p12-pem');
+getPem('/path/to/key.p12')
   .then(pem => {
     console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
   })
@@ -42,8 +42,8 @@ gp12.getPem('/path/to/key.p12')
 
 ### callback style
 ```js
-const gp12 = require('google-p12-pem');
-gp12.getPem('/path/to/key.p12', function(err, pem) {
+const {getPem} = require('google-p12-pem');
+getPem('/path/to/key.p12', function(err, pem) {
   console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
 });
 ```
