@@ -30,12 +30,12 @@
     "pify": "^3.0.0"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.43",
-    "@types/node": "^8.0.47",
-    "@types/node-forge": "^0.6.10",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.5.2",
+    "@types/node-forge": "^0.7.0",
     "@types/pify": "^3.0.0",
     "gts": "latest",
-    "mocha": "^4.0.0",
-    "typescript": "~2.6.0"
+    "mocha": "^4.0.1",
+    "typescript": "~2.6.2"
   }
 }

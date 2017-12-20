@@ -71,6 +71,5 @@ describe('GoogleP12Pem', () => {
         .catch(e => {
           assert.fail('Error getting pem from promise.');
         });
-
   });
 });
