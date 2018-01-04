@@ -16,7 +16,8 @@
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
-    "posttest": "npm run check"
+    "posttest": "npm run check && npm run license-check",
+    "license-check": "jsgl --local ."
   },
   "files": [
     "LICENSE",
@@ -35,6 +36,7 @@
     "@types/node-forge": "^0.7.0",
     "@types/pify": "^3.0.0",
     "gts": "latest",
+    "js-green-licenses": "^0.2.0",
     "mocha": "^4.0.1",
     "typescript": "~2.6.2"
   }
