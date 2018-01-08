@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^2.2.44",
-    "@types/node": "^8.5.2",
+    "@types/node": "^9.3.0",
     "@types/node-forge": "^0.7.0",
     "@types/pify": "^3.0.0",
     "gts": "latest",
