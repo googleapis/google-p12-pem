@@ -36,7 +36,7 @@
     "@types/node-forge": "^0.7.0",
     "@types/pify": "^3.0.0",
     "gts": "latest",
-    "js-green-licenses": "^0.2.0",
+    "js-green-licenses": "^0.3.0",
     "mocha": "^4.0.1",
     "typescript": "~2.6.2"
   }
