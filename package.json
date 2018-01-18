@@ -37,7 +37,7 @@
     "@types/pify": "^3.0.0",
     "gts": "latest",
     "js-green-licenses": "^0.3.1",
-    "mocha": "^4.0.1",
+    "mocha": "^5.0.0",
     "typescript": "~2.6.2"
   }
 }
