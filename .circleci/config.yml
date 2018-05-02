@@ -37,6 +37,7 @@ workflows:
             - node6
             - node8
             - node9
+            - node10
           filters:
             branches:
               ignore: /.*/
@@ -63,10 +64,15 @@ jobs:
       - image: node:9
         user: node
     <<: *unit_tests
+  node10:
+    docker:
+      - image: node:10
+        user: node
+    <<: *unit_tests
 
   publish_npm:
     docker:
-      - image: node:8
+      - image: node10
         user: node
     steps:
       - checkout
