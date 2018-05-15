@@ -17,7 +17,7 @@
     "compile": "tsc -p .",
     "fix": "gts fix",
     "prepare": "npm run compile",
-    "pretest": "npm run compile",
+    "pretest-only": "npm run compile",
     "posttest": "npm run check",
     "license-check": "jsgl --local ."
   },
