@@ -6,11 +6,9 @@ describe('GoogleP12Pem', () => {
   const GOODP12FILE = './test/assets/key.p12';
   const BADP12FILE = './test/assets/badkey.p12';
   const PEMFILENAME = './test/assets/key.pem';
-  const expectedPem = fs.readFileSync(PEMFILENAME, {encoding: 'utf8'});
+  const expectedPem = fs.readFileSync(PEMFILENAME, {encoding : 'utf8'});
 
-  it('should exist', () => {
-    assert.equal(typeof getPem, 'function');
-  });
+  it('should exist', () => { assert.equal(typeof getPem, 'function'); });
 
   it('should provide error on bad filename and callback', done => {
     getPem('./badfilename.p12', (err, pem) => {
@@ -28,9 +26,7 @@ describe('GoogleP12Pem', () => {
         .then(pem => {
           assert.fail('Returned pem when it should have been rejected');
         })
-        .catch(e => {
-          done();
-        });
+        .catch(e => { done(); });
   });
 
   it('should throw error on bad .p12 with no callback', done => {
@@ -38,9 +34,7 @@ describe('GoogleP12Pem', () => {
         .then(pem => {
           assert.fail('Returned pem when it should have been rejected');
         })
-        .catch(e => {
-          done();
-        });
+        .catch(e => { done(); });
   });
 
   it('should return error on bad .p12 in callback', done => {
@@ -65,11 +59,7 @@ describe('GoogleP12Pem', () => {
 
   it('should return a promise that resolves with the pem', () => {
     getPem(GOODP12FILE)
-        .then(result => {
-          assert.equal(expectedPem, result);
-        })
-        .catch(e => {
-          assert.fail('Error getting pem from promise.');
-        });
+        .then(result => { assert.equal(expectedPem, result); })
+        .catch(e => { assert.fail('Error getting pem from promise.'); });
   });
 });
