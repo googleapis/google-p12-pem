@@ -12,12 +12,12 @@ const readFile = pify(fs.readFile);
  *         if no callback provided.
  */
 export function getPem(filename: string): Promise<string>;
-export function getPem(
-    filename: string,
-    callback: (err: Error|null, pem: string|null) => void): void;
-export function getPem(
-    filename: string, callback?: (err: Error|null, pem: string|null) => void):
-    Promise<string>|void {
+export function getPem(filename: string,
+                       callback: (err: Error|null, pem: string|null) =>
+                           void): void;
+export function getPem(filename: string,
+                       callback?: (err: Error|null, pem: string|null) =>
+                           void): Promise<string>|void {
   if (callback) {
     getPemAsync(filename)
         .then(pem => callback(null, pem))
@@ -28,9 +28,8 @@ export function getPem(
 }
 
 function getPemAsync(filename: string) {
-  return readFile(filename, {encoding: 'base64'}).then(keyp12 => {
-    return convertToPem(keyp12);
-  });
+  return readFile(filename, {encoding : 'base64'})
+      .then(keyp12 => { return convertToPem(keyp12); });
 }
 
 /**
@@ -42,7 +41,7 @@ function convertToPem(p12base64: string): string {
   const p12Der = forge.util.decode64(p12base64);
   const p12Asn1 = forge.asn1.fromDer(p12Der);
   const p12 = forge.pkcs12.pkcs12FromAsn1(p12Asn1, 'notasecret');
-  const bags = p12.getBags({friendlyName: 'privatekey'});
+  const bags = p12.getBags({friendlyName : 'privatekey'});
   if (bags.friendlyName) {
     const privateKey = bags.friendlyName[0].key;
     const pem = forge.pki.privateKeyToPem(privateKey);
