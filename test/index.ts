@@ -9,13 +9,13 @@ describe('GoogleP12Pem', () => {
   const expectedPem = fs.readFileSync(PEMFILENAME, {encoding: 'utf8'});
 
   it('should exist', () => {
-    assert.equal(typeof getPem, 'function');
+    assert.strictEqual(typeof getPem, 'function');
   });
 
   it('should provide error on bad filename and callback', done => {
     getPem('./badfilename.p12', (err, pem) => {
       assert(err);
-      assert.equal(pem, null);
+      assert.strictEqual(pem, null);
       if (err) {
         assert.ok(err.message.startsWith('ENOENT'));
         done();
@@ -58,7 +58,7 @@ describe('GoogleP12Pem', () => {
   it('should work async when provided a callback', done => {
     getPem(GOODP12FILE, (err, pem) => {
       assert.ifError(err);
-      assert.equal(expectedPem, pem);
+      assert.strictEqual(expectedPem, pem);
       done();
     });
   });
@@ -66,7 +66,7 @@ describe('GoogleP12Pem', () => {
   it('should return a promise that resolves with the pem', () => {
     getPem(GOODP12FILE)
         .then(result => {
-          assert.equal(expectedPem, result);
+          assert.strictEqual(expectedPem, result);
         })
         .catch(e => {
           assert.fail('Error getting pem from promise.');
