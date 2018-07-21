@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as forge from 'node-forge';
-import pify from 'pify';
+import * as pify from 'pify';
 
 const readFile = pify(fs.readFile);
 
