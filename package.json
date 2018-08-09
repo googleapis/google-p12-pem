@@ -30,7 +30,7 @@
   "license": "MIT",
   "dependencies": {
     "node-forge": "^0.7.5",
-    "pify": "^3.0.0"
+    "pify": "^4.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.0",
