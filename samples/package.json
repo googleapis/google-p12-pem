@@ -1,0 +1,19 @@
+{
+  "description": "Samples for the google-p12-pem npm module.",
+  "license": "MIT",
+  "author": "Google LLC",
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": "google/google-p12-pem",
+  "private": true,
+  "scripts": {
+    "test": "mocha system-test"
+  },
+  "dependencies": {
+    "google-p12-pem": "*"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
