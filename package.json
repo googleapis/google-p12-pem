@@ -21,7 +21,9 @@
     "posttest": "npm run check",
     "license-check": "jsgl --local .",
     "samples-test": "mocha samples/system-test",
-    "system-test": "mocha build/system-test"
+    "system-test": "mocha build/system-test",
+    "lint": "npm run check",
+    "docs": "echo no docs 👩‍⚕️"
   },
   "files": [
     "LICENSE",
