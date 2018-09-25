@@ -9,11 +9,16 @@ import * as assert from 'assert';
 import * as fs from 'fs';
 import {getPem} from '../src/index';
 
+const _stripCarriageReturns = (str: string): string => {
+  return str.replace(/\r/g, '');
+};
+
 describe('GoogleP12Pem', () => {
   const GOODP12FILE = './test/assets/key.p12';
   const BADP12FILE = './test/assets/badkey.p12';
   const PEMFILENAME = './test/assets/key.pem';
-  const expectedPem = fs.readFileSync(PEMFILENAME, {encoding: 'utf8'});
+  const expectedPem =
+      _stripCarriageReturns(fs.readFileSync(PEMFILENAME, {encoding: 'utf8'}));
 
   it('should exist', () => {
     assert.strictEqual(typeof getPem, 'function');
