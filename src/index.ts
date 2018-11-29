@@ -51,7 +51,7 @@ function convertToPem(p12base64: string): string {
   const p12 = forge.pkcs12.pkcs12FromAsn1(p12Asn1, 'notasecret');
   const bags = p12.getBags({friendlyName: 'privatekey'});
   if (bags.friendlyName) {
-    const privateKey = bags.friendlyName[0].key;
+    const privateKey = bags.friendlyName[0].key!;
     const pem = forge.pki.privateKeyToPem(privateKey);
     return pem.replace(/\r\n/g, '\n');
   } else {
