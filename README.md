@@ -65,3 +65,4 @@ gp12-pem myfile.p12 > output.pem
 [snyk-url]: https://snyk.io/test/github/google/google-p12-pem
 [travis-image]: https://travis-ci.org/google/google-p12-pem.svg?branch=master
 [travis-url]: https://travis-ci.org/google/google-p12-pem
+
