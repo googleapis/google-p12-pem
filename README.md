@@ -1,15 +1,13 @@
+<img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" alt="Google Cloud Platform logo" title="Google Cloud Platform" align="right" height="96" width="96"/>
+
 # google-p12-pem
+[![npm version](https://img.shields.io/npm/v/google-p12-pem.svg)](https://www.npmjs.org/package/google-p12-pem)
+[![codecov](https://img.shields.io/codecov/c/github/googleapis/google-p12-pem/master.svg?style=flat)](https://codecov.io/gh/googleapis/google-p12-pem)
+[![Known Vulnerabilities](https://snyk.io/test/github/googleapis/google-p12-pem/badge.svg)](https://snyk.io/test/github/googleapis/google-p12-pem)
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][david-image]][david-url]
-[![devDependency Status][david-dev-image]][david-dev-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
-
-Convert Google `.p12` keys to `.pem` keys.
+Convert your Google `.p12` keys to `.pem` keys.
 
 ## Installation
-
 ``` sh
 npm install google-p12-pem
 ```
@@ -54,14 +52,3 @@ gp12-pem myfile.p12 > output.pem
 
 ## License
 [MIT](LICENSE)
-
-[david-image]: https://david-dm.org/google/google-p12-pem.svg
-[david-url]: https://david-dm.org/google/google-p12-pem
-[david-dev-image]: https://david-dm.org/google/google-p12-pem/dev-status.svg
-[david-dev-url]: https://david-dm.org/google/google-p12-pem?type=dev
-[npm-image]: https://img.shields.io/npm/v/google-p12-pem.svg
-[npm-url]: https://www.npmjs.com/package/google-p12-pem
-[snyk-image]: https://snyk.io/test/github/google/google-p12-pem/badge.svg
-[snyk-url]: https://snyk.io/test/github/google/google-p12-pem
-[travis-image]: https://travis-ci.org/google/google-p12-pem.svg?branch=master
-[travis-url]: https://travis-ci.org/google/google-p12-pem
