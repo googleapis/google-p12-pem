@@ -2,32 +2,28 @@
   "name": "google-p12-pem",
   "version": "1.0.2",
   "description": "Convert Google .p12 keys to .pem keys",
-  "main": "build/src/index.js",
+  "main": "./build/src/index.js",
   "types": "./build/src/index.d.ts",
   "repository": "https://github.com/google/google-p12-pem",
   "bin": {
     "gp12-pem": "build/src/bin/gp12-pem.js"
   },
   "scripts": {
-    "test": "npm run test-only",
-    "test-only": "nyc mocha build/test",
+    "test": "nyc mocha build/test",
     "check": "gts check && npm run license-check",
     "clean": "gts clean",
-    "codecov": "nyc report --reporter=json && codecov -f coverage/*.json",
     "compile": "tsc -p .",
-    "fix": "gts fix",
+    "fix": "gts fix && eslint --fix '**/*.js'",
     "prepare": "npm run compile",
-    "pretest-only": "npm run compile",
+    "pretest": "npm run compile",
     "posttest": "npm run check",
     "license-check": "jsgl --local .",
     "samples-test": "mocha samples/system-test",
     "system-test": "mocha build/system-test",
-    "lint": "npm run check",
+    "lint": "gts check && eslint '**/*.js'",
     "docs": "echo no docs 👩‍⚕️"
   },
   "files": [
-    "LICENSE",
-    "README.md",
     "build/src",
     "!build/src/**/*.map"
   ],
