@@ -13,14 +13,14 @@
     "check": "gts check && npm run license-check",
     "clean": "gts clean",
     "compile": "tsc -p .",
-    "fix": "gts fix && eslint --fix '**/*.js'",
+    "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run check",
     "license-check": "jsgl --local .",
     "samples-test": "mocha samples/system-test",
     "system-test": "mocha build/system-test",
-    "lint": "gts check && eslint '**/*.js'",
+    "lint": "gts check",
     "docs": "echo no docs 👩‍⚕️"
   },
   "files": [
