@@ -5,15 +5,17 @@
   "engines": {
     "node": ">=8"
   },
-  "repository": "google/google-p12-pem",
+  "repository": "googleapis/google-p12-pem",
   "private": true,
   "scripts": {
-    "test": "mocha system-test"
+    "test": "mocha"
   },
   "dependencies": {
     "google-p12-pem": "^1.0.3"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "execa": "^1.0.0",
     "mocha": "^5.2.0"
   }
 }
