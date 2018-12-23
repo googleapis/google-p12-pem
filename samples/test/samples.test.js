@@ -12,7 +12,7 @@ const path = require('path');
 const certPath = path.join(__dirname, '../assets/key.p12');
 
 describe('sample tests', () => {
-  it('should run the quickstart', async() => {
+  it('should run the quickstart', async () => {
     const {stdout} = await execa.shell(`node quickstart '${certPath}'`);
     assert.match(stdout, /The converted PEM:/);
   });
