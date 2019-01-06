@@ -51,4 +51,4 @@ gp12-pem myfile.p12 > output.pem
 ```
 
 ## License
-[MIT](LICENSE)
+[MIT](https://github.com/googleapis/google-p12-pem/blob/master/LICENSE)
