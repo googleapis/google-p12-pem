@@ -22,7 +22,9 @@
     "presystem-test": "npm run compile",
     "system-test": "mocha build/system-test",
     "lint": "gts check && eslint '**/*.js'",
-    "docs": "compodoc src/"
+    "docs": "compodoc src/",
+    "docs-test": "blcl docs -r --exclude www.googleapis.com",
+    "predocs-test": "npm run docs"
   },
   "files": [
     "build/src",
@@ -52,6 +54,7 @@
     "nyc": "^13.0.0",
     "prettier": "^1.15.3",
     "source-map-support": "^0.5.6",
-    "typescript": "~3.3.0"
+    "typescript": "~3.3.0",
+    "broken-link-checker-local": "^0.2.0"
   }
 }
