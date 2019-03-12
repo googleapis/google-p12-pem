@@ -4,6 +4,38 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+## v1.0.4
+
+03-12-2019 12:25 PDT
+
+This release includes a new shiny version of node-forge!
+
+### Dependencies
+- fix(deps): update dependency node-forge to ^0.8.0 ([#137](https://github.com/google/google-p12-pem/pull/137))
+
+### Documentation
+- docs: update links in contrib guide ([#145](https://github.com/google/google-p12-pem/pull/145))
+- docs: move CONTRIBUTING.md to root ([#140](https://github.com/google/google-p12-pem/pull/140))
+- docs: add lint/fix example to contributing guide ([#138](https://github.com/google/google-p12-pem/pull/138))
+
+### Internal / Testing Changes
+- build: Add docuploader credentials to node publish jobs ([#149](https://github.com/google/google-p12-pem/pull/149))
+- build: update release config ([#147](https://github.com/google/google-p12-pem/pull/147))
+- build: use node10 to run samples-test, system-test etc ([#148](https://github.com/google/google-p12-pem/pull/148))
+- chore(deps): update dependency mocha to v6
+- build: use linkinator for docs test ([#144](https://github.com/google/google-p12-pem/pull/144))
+- build: create docs test npm scripts ([#143](https://github.com/google/google-p12-pem/pull/143))
+- build: test using @grpc/grpc-js in CI ([#142](https://github.com/google/google-p12-pem/pull/142))
+- chore(deps): update dependency eslint-config-prettier to v4 ([#135](https://github.com/google/google-p12-pem/pull/135))
+- build: ignore googleapis.com in doc link check ([#134](https://github.com/google/google-p12-pem/pull/134))
+- build: check dead links on Kokoro ([#132](https://github.com/google/google-p12-pem/pull/132))
+- test: add system test, samples, and sample test ([#131](https://github.com/google/google-p12-pem/pull/131))
+- chore(build): inject yoshi automation key ([#130](https://github.com/google/google-p12-pem/pull/130))
+- chore: update nyc and eslint configs ([#129](https://github.com/google/google-p12-pem/pull/129))
+- chore: fix publish.sh permission +x ([#127](https://github.com/google/google-p12-pem/pull/127))
+- fix(build): fix Kokoro release script ([#126](https://github.com/google/google-p12-pem/pull/126))
+- build: add Kokoro configs for autorelease ([#125](https://github.com/google/google-p12-pem/pull/125))
+
 ## v1.0.3
 
 12-07-2018 09:50 PST
