@@ -40,7 +40,7 @@
     "@compodoc/compodoc": "^1.1.7",
     "@types/mocha": "^5.2.0",
     "@types/node": "^10.0.9",
-    "@types/node-forge": "^0.7.3",
+    "@types/node-forge": "^0.8.0",
     "@types/pify": "^3.0.2",
     "codecov": "^3.0.2",
     "eslint": "^5.11.0",
