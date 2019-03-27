@@ -1,54 +1,78 @@
+[//]: # "This README.md file is auto-generated, all changes to this file will be lost."
+[//]: # "To regenerate it, use `python -m synthtool`."
 <img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" alt="Google Cloud Platform logo" title="Google Cloud Platform" align="right" height="96" width="96"/>
 
-# google-p12-pem
+# [:  Client](https://github.com/)
+
+None
 [![npm version](https://img.shields.io/npm/v/google-p12-pem.svg)](https://www.npmjs.org/package/google-p12-pem)
-[![codecov](https://img.shields.io/codecov/c/github/googleapis/google-p12-pem/master.svg?style=flat)](https://codecov.io/gh/googleapis/google-p12-pem)
-[![Known Vulnerabilities](https://snyk.io/test/github/googleapis/google-p12-pem/badge.svg)](https://snyk.io/test/github/googleapis/google-p12-pem)
+[![codecov](https://img.shields.io/codecov/c/github//master.svg?style=flat)](https://codecov.io/gh/)
 
-Convert your Google `.p12` keys to `.pem` keys.
 
-## Installation
-``` sh
-npm install google-p12-pem
-```
+Convert Google .p12 keys to .pem keys
 
-## Usage
 
-### async/await style
-```js
-const {getPem} = require('google-p12-pem');
-async function foo() {
-  const pem = await getPem('/path/to/key.p12');
-  console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
-}
-```
+* [Using the client library](#using-the-client-library)
+* [Versioning](#versioning)
+* [Contributing](#contributing)
+* [License](#license)
 
-### promise style
-```js
-const {getPem} = require('google-p12-pem');
-getPem('/path/to/key.p12')
-  .then(pem => {
-    console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
-  })
-  .catch(err => {
-    console.error(err); // :(
-  });
+## Using the client library
 
-```
+1.  [Select or create a Cloud Platform project][projects].
+1.  [Enable the  API][enable_api].
+1.  [Set up authentication with a service account][auth] so you can access the
+    API from your local workstation.
 
-### callback style
-```js
-const {getPem} = require('google-p12-pem');
-getPem('/path/to/key.p12', function(err, pem) {
-  console.log(pem); // '-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAK...'
-});
-```
+1. Install the client library:
 
-### CLI style
+        npm install google-p12-pem
 
-``` sh
-gp12-pem myfile.p12 > output.pem
-```
+
+
+
+
+The [  Client API Reference][client-docs] documentation
+also contains samples.
+
+## Versioning
+
+This library follows [Semantic Versioning](http://semver.org/).
+
+
+
+
+
+
+More Information: [Google Cloud Platform Launch Stages][launch_stages]
+
+[launch_stages]: https://cloud.google.com/terms/launch-stages
+
+## Contributing
+
+Contributions welcome! See the [Contributing Guide](https://github.com//blob/master/CONTRIBUTING.md).
 
 ## License
-[MIT](https://github.com/googleapis/google-p12-pem/blob/master/LICENSE)
+
+Apache Version 2.0
+
+See [LICENSE](https://github.com//blob/master/LICENSE)
+
+## What's Next
+
+* [ Documentation][product-docs]
+* [  Client API Reference][client-docs]
+* [github.com/](https://github.com/)
+
+Read more about the client libraries for Cloud APIs, including the older
+Google APIs Client Libraries, in [Client Libraries Explained][explained].
+
+[explained]: https://cloud.google.com/apis/docs/client-libraries-explained
+
+[client-docs]: 
+[product-docs]: 
+[shell_img]: https://gstatic.com/cloudssh/images/open-btn.png
+[projects]: https://console.cloud.google.com/project
+[billing]: https://support.google.com/cloud/answer/6293499#enable-billing
+[enable_api]: https://console.cloud.google.com/flows/enableapi?apiid=
+[auth]: https://cloud.google.com/docs/authentication/getting-started
