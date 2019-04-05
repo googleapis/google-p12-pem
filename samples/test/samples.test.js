@@ -5,17 +5,11 @@
  * See file LICENSE for detail or copy at https://opensource.org/licenses/MIT
  */
 
-<<<<<<< HEAD
 const cp = require('child_process');
-=======
-const cp = require('child_process');
->>>>>>> master
 const {assert} = require('chai');
 const path = require('path');
 
-const execSync = (cmd) => cp.execSync(cmd, {encoding: 'utf-8'});
-
-const execSync = (cmd) => cp.execSync(cmd, {encoding: 'utf-8'});
+const execSync = cmd => cp.execSync(cmd, {encoding: 'utf-8'});
 
 const certPath = path.join(__dirname, '../assets/key.p12');
 
