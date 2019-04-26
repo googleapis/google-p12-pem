@@ -1,0 +1,8 @@
+{
+  "name": "google-p12-pem",
+  "name_pretty": "google-p12-pem",
+  "release_level": "ga",
+  "language": "nodejs",
+  "repo": "googleapis/google-p12-pem",
+  "distribution_name": "google-p12-pem"
+}
