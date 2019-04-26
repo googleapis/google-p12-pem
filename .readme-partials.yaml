@@ -1,0 +1,7 @@
+title: # google-p12-pem
+body: |-
+    #### CLI style
+
+    ``` sh
+    gp12-pem myfile.p12 > output.pem
+    ```

@@ -5,17 +5,24 @@
  * See file LICENSE for detail or copy at https://opensource.org/licenses/MIT
  */
 
-const {getPem} = require('google-p12-pem');
+async function main(pathToCert) {
+  // [START p12_pem_quickstart]
+  const {getPem} = require('google-p12-pem');
 
-/**
- * Given a p12 file, convert it to the PEM format.
- * @param {string} pathToCert The relative path to a p12 file.
- */
-async function quickstart(pathToCert) {
-  const pem = await getPem(pathToCert);
-  console.log('The converted PEM:');
-  console.log(pem);
+  /**
+   * Given a p12 file, convert it to the PEM format.
+   * @param {string} pathToCert The relative path to a p12 file.
+   */
+  async function quickstart() {
+    // TODO(developer): provide the path to your cert
+    // const pathToCert = 'path/to/cert.p12';
+
+    const pem = await getPem(pathToCert);
+    console.log('The converted PEM:');
+    console.log(pem);
+  }
+
+  quickstart();
+  // [END p12_pem_quickstart]
 }
-
-const args = process.argv.slice(2);
-quickstart(...args).catch(console.error);
+main(...process.argv.slice(2));
