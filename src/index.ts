@@ -7,9 +7,9 @@
 
 import * as fs from 'fs';
 import * as forge from 'node-forge';
-import * as pify from 'pify';
+import {promisify} from 'util';
 
-const readFile = pify(fs.readFile);
+const readFile = promisify(fs.readFile);
 
 /**
  * Convert a .p12 file to .pem string
