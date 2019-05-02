@@ -20,15 +20,17 @@ const readFile = pify(fs.readFile);
  */
 export function getPem(filename: string): Promise<string>;
 export function getPem(
-    filename: string,
-    callback: (err: Error|null, pem: string|null) => void): void;
+  filename: string,
+  callback: (err: Error | null, pem: string | null) => void
+): void;
 export function getPem(
-    filename: string, callback?: (err: Error|null, pem: string|null) => void):
-    Promise<string>|void {
+  filename: string,
+  callback?: (err: Error | null, pem: string | null) => void
+): Promise<string> | void {
   if (callback) {
     getPemAsync(filename)
-        .then(pem => callback(null, pem))
-        .catch(err => callback(err, null));
+      .then(pem => callback(null, pem))
+      .catch(err => callback(err, null));
   } else {
     return getPemAsync(filename);
   }
