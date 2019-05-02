@@ -4,6 +4,18 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+## [2.0.0](https://www.github.com/google/google-p12-pem/compare/v1.0.4...v2.0.0) (2019-05-02)
+
+
+### Build System
+
+* upgrade engines field to >=8.10.0 ([#167](https://www.github.com/google/google-p12-pem/issues/167)) ([85da6e6](https://www.github.com/google/google-p12-pem/commit/85da6e6))
+
+
+### BREAKING CHANGES
+
+* upgrade engines field to >=8.10.0 (#167)
+
 ## v1.0.4
 
 03-12-2019 12:25 PDT
@@ -106,4 +118,3 @@ This is a service release very few updates.  The only interesting change is the 
 - chore(package): update @types/node to version 10.0.3 ([#34](https://github.com/google/google-p12-pem/pull/34))
 - chore: start testing on node 10 ([#36](https://github.com/google/google-p12-pem/pull/36))
 - chore(package): update @types/mocha to version 5.0.0 ([#33](https://github.com/google/google-p12-pem/pull/33))
-
