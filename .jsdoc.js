@@ -41,5 +41,8 @@ module.exports = {
     sourceFiles: false,
     systemName: 'google-p12-pem',
     theme: 'lumen'
+  },
+  markdown: {
+    idInHeadings: true
   }
 };
