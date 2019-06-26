@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+### [2.0.1](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.0...v2.0.1) (2019-06-26)
+
+
+### Bug Fixes
+
+* **docs:** link to reference docs section on googleapis.dev ([#184](https://www.github.com/googleapis/google-p12-pem/issues/184)) ([a08353b](https://www.github.com/googleapis/google-p12-pem/commit/a08353b))
+
 ## [2.0.0](https://www.github.com/google/google-p12-pem/compare/v1.0.4...v2.0.0) (2019-05-02)
 
 
