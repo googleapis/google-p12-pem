@@ -23,7 +23,7 @@
     "system-test": "mocha build/system-test",
     "lint": "gts check && eslint '**/*.js'",
     "docs": "compodoc src/",
-    "docs-test": "linkinator docs -r --skip www.googleapis.com",
+    "docs-test": "linkinator docs",
     "predocs-test": "npm run docs"
   },
   "files": [
@@ -53,7 +53,7 @@
     "prettier": "^1.15.3",
     "source-map-support": "^0.5.6",
     "typescript": "~3.5.0",
-    "linkinator": "^1.1.2"
+    "linkinator": "^1.5.0"
   },
   "engines": {
     "node": ">=8.10.0"
