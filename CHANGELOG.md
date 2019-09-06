@@ -4,6 +4,14 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+### [2.0.2](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.1...v2.0.2) (2019-09-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency node-forge to ^0.9.0 ([#193](https://www.github.com/googleapis/google-p12-pem/issues/193)) ([ecac0f4](https://www.github.com/googleapis/google-p12-pem/commit/ecac0f4))
+* **docs:** remove reference-docs anchor ([a6ad735](https://www.github.com/googleapis/google-p12-pem/commit/a6ad735))
+
 ### [2.0.1](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.0...v2.0.1) (2019-06-26)
 
 
