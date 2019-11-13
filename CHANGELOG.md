@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+### [2.0.3](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.2...v2.0.3) (2019-11-13)
+
+
+### Bug Fixes
+
+* **docs:** add jsdoc-region-tag plugin ([#206](https://www.github.com/googleapis/google-p12-pem/issues/206)) ([b34efde](https://www.github.com/googleapis/google-p12-pem/commit/b34efdebb853dd5129e15ec1ff11a75184fc32d7))
+
 ### [2.0.2](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.1...v2.0.2) (2019-09-06)
 
 
