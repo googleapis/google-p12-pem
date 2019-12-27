@@ -8,9 +8,9 @@
 const cp = require('child_process');
 const {assert} = require('chai');
 const path = require('path');
+const {describe, it} = require('mocha');
 
 const execSync = cmd => cp.execSync(cmd, {encoding: 'utf-8'});
-
 const certPath = path.join(__dirname, '../assets/key.p12');
 
 describe('sample tests', () => {
