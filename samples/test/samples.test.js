@@ -7,6 +7,7 @@
 
 const cp = require('child_process');
 const {assert} = require('chai');
+const {describe, it} = require('mocha');
 const path = require('path');
 const {describe, it} = require('mocha');
 
