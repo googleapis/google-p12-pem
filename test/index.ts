@@ -6,9 +6,9 @@
  */
 
 import * as assert from 'assert';
+import {describe, it} from 'mocha';
 import * as fs from 'fs';
 import {getPem} from '../src/index';
-import {describe, it} from 'mocha';
 
 const _stripCarriageReturns = (str: string): string => {
   return str.replace(/\r/g, '');
