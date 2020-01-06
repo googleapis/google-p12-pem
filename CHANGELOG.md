@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+### [2.0.4](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.3...v2.0.4) (2020-01-06)
+
+
+### Bug Fixes
+
+* **deps:** pin TypeScript below 3.7.0 ([81dd96d](https://www.github.com/googleapis/google-p12-pem/commit/81dd96d4b43100824561f45b51f9126195b41d1d))
+
 ### [2.0.3](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.2...v2.0.3) (2019-11-13)
 
 
