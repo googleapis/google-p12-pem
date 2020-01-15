@@ -39,17 +39,17 @@ describe('GoogleP12Pem', () => {
 
   it('should throw ENOENT on bad filename with no callback', done => {
     getPem('./badfilename.p12')
-      .then(pem => {
+      .then(() => {
         assert.fail('Returned pem when it should have been rejected');
       })
-      .catch(e => {
+      .catch(() => {
         done();
       });
   });
 
   it('should throw error on bad .p12 with no callback', done => {
     getPem(BADP12FILE)
-      .then(pem => {
+      .then(() => {
         assert.fail('Returned pem when it should have been rejected');
       })
       .catch(e => {
