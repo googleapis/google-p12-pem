@@ -51,7 +51,7 @@
     "c8": "^7.0.0",
     "prettier": "^1.15.3",
     "typescript": "3.6.4",
-    "linkinator": "^1.5.0"
+    "linkinator": "^2.0.0"
   },
   "engines": {
     "node": ">=8.10.0"
