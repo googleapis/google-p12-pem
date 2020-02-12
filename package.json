@@ -24,7 +24,8 @@
     "lint": "gts check && eslint '**/*.js'",
     "docs": "compodoc src/",
     "docs-test": "linkinator docs",
-    "predocs-test": "npm run docs"
+    "predocs-test": "npm run docs",
+    "prelint": "cd samples; npm link ../"
   },
   "files": [
     "build/src",
