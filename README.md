@@ -47,22 +47,22 @@ npm install google-p12-pem
 ### Using the client library
 
 ```javascript
-  const {getPem} = require('google-p12-pem');
+const {getPem} = require('google-p12-pem');
 
-  /**
-   * Given a p12 file, convert it to the PEM format.
-   * @param {string} pathToCert The relative path to a p12 file.
-   */
-  async function quickstart() {
-    // TODO(developer): provide the path to your cert
-    // const pathToCert = 'path/to/cert.p12';
+/**
+ * Given a p12 file, convert it to the PEM format.
+ * @param {string} pathToCert The relative path to a p12 file.
+ */
+async function quickstart() {
+  // TODO(developer): provide the path to your cert
+  // const pathToCert = 'path/to/cert.p12';
 
-    const pem = await getPem(pathToCert);
-    console.log('The converted PEM:');
-    console.log(pem);
-  }
+  const pem = await getPem(pathToCert);
+  console.log('The converted PEM:');
+  console.log(pem);
+}
 
-  quickstart();
+quickstart();
 
 ```
 #### CLI style
