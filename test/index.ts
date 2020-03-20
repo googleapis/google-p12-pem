@@ -39,27 +39,27 @@ describe('GoogleP12Pem', () => {
 
   it('should throw ENOENT on bad filename with no callback', done => {
     getPem('./badfilename.p12')
-      .then(pem => {
+      .then(() => {
         assert.fail('Returned pem when it should have been rejected');
       })
-      .catch(e => {
+      .catch(() => {
         done();
       });
   });
 
   it('should throw error on bad .p12 with no callback', done => {
     getPem(BADP12FILE)
-      .then(pem => {
+      .then(() => {
         assert.fail('Returned pem when it should have been rejected');
       })
-      .catch(e => {
+      .catch(() => {
         done();
       });
   });
 
   it('should return error on bad .p12 in callback', done => {
     assert.doesNotThrow(() => {
-      getPem(BADP12FILE, (err, pem) => {
+      getPem(BADP12FILE, err => {
         assert(err);
         if (err) {
           assert(err.message.indexOf('Too few bytes to read') > -1);
@@ -82,7 +82,7 @@ describe('GoogleP12Pem', () => {
       .then(result => {
         assert.strictEqual(expectedPem, result);
       })
-      .catch(e => {
+      .catch(() => {
         assert.fail('Error getting pem from promise.');
       });
   });
