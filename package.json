@@ -55,6 +55,6 @@
     "linkinator": "^2.0.0"
   },
   "engines": {
-    "node": ">=8.10.0"
+    "node": ">=10"
   }
 }
