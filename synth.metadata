@@ -1,11 +1,12 @@
 {
-  "updateTime": "2020-03-20T11:10:20.239692Z",
+  "updateTime": "2020-03-21T11:10:16.070596Z",
   "sources": [
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "bcad3e01b69851ad682a87f8202003a1683ad73a"
+        "sha": "7e98e1609c91082f4eeb63b530c6468aefd18cfd",
+        "log": "7e98e1609c91082f4eeb63b530c6468aefd18cfd\nbuild: use checkout@v2, not v1, as this allows manual re-running of tests (#451)\n\nhttps://github.com/actions/checkout/issues/23\n"
       }
     }
   ]
