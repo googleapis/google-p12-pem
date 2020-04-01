@@ -4,23 +4,6 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
-## [3.0.0](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.4...v3.0.0) (2020-03-20)
-
-
-### ⚠ BREAKING CHANGES
-
-* typescript@3.7.x introduced backwards incompatibilities
-* drops Node 8 from engines (#242)
-
-### Features
-
-* drops Node 8 from engines ([#242](https://www.github.com/googleapis/google-p12-pem/issues/242)) ([857cc92](https://www.github.com/googleapis/google-p12-pem/commit/857cc92e711a2ffd5bba18179c8d0395f38cc6ef))
-
-
-### Build System
-
-* update typescript/gts ([#243](https://www.github.com/googleapis/google-p12-pem/issues/243)) ([f910f07](https://www.github.com/googleapis/google-p12-pem/commit/f910f07374d586241663755ddf66f3a38e394c28))
-
 ### [2.0.4](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.3...v2.0.4) (2020-01-06)
 
 
