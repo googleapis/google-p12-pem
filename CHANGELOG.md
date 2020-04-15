@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+### [3.0.1](https://www.github.com/googleapis/google-p12-pem/compare/v3.0.0...v3.0.1) (2020-04-14)
+
+
+### Bug Fixes
+
+* apache license URL ([#468](https://www.github.com/googleapis/google-p12-pem/issues/468)) ([#252](https://www.github.com/googleapis/google-p12-pem/issues/252)) ([5469838](https://www.github.com/googleapis/google-p12-pem/commit/5469838c5137f69352aa80f40eb6c1415e887e18))
+
 ## [3.0.0](https://www.github.com/googleapis/google-p12-pem/compare/v2.0.4...v3.0.0) (2020-03-20)
 
 
