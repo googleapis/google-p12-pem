@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+### [3.0.2](https://www.github.com/googleapis/google-p12-pem/compare/v3.0.1...v3.0.2) (2020-07-09)
+
+
+### Bug Fixes
+
+* typeo in nodejs .gitattribute ([#270](https://www.github.com/googleapis/google-p12-pem/issues/270)) ([046f594](https://www.github.com/googleapis/google-p12-pem/commit/046f5946bc6809481aa04c7ed604bca3dacc21cc))
+
 ### [3.0.1](https://www.github.com/googleapis/google-p12-pem/compare/v3.0.0...v3.0.1) (2020-04-14)
 
 
