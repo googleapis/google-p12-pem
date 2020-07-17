@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/google-p12-pem.git",
-        "sha": "42a5e1bcb4b73bdb6dccd3f27033581c4338ed7a"
+        "sha": "df1ebeb54583bbc52f66f686e3622e73c7823139"
       }
     },
     {
