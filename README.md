@@ -14,6 +14,9 @@
 Convert Google .p12 keys to .pem keys.
 
 
+A comprehensive list of changes in each version may be found in
+[the CHANGELOG](https://github.com/googleapis/google-p12-pem/blob/master/CHANGELOG.md).
+
 
 
 * [github.com/googleapis/google-p12-pem](https://github.com/googleapis/google-p12-pem)
