@@ -3,15 +3,15 @@
     {
       "git": {
         "name": ".",
-        "remote": "git@github.com:googleapis/google-p12-pem.git",
-        "sha": "fbacb7a469b19488bf60e96c14a50f0435ee9a4f"
+        "remote": "https://github.com/googleapis/google-p12-pem.git",
+        "sha": "b6fab0b70d24e35768588ae53d844f6b5953bba5"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "57c23fa5705499a4181095ced81f0ee0933b64f6"
+        "sha": "898b38a6f4fab89a76dfb152480bb034a781331b"
       }
     }
   ]
