@@ -4,14 +4,14 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/google-p12-pem.git",
-        "sha": "6684343199b6a1704b2ad5e965a65b9289a96907"
+        "sha": "5228d2a5c91f6009d837afe2ce73b638c1ffacbe"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "b891fb474173f810051a7fdb0d66915e0a9bc82f"
+        "sha": "7332178a11ddddc91188dc0f25bca1ccadcaa6c6"
       }
     }
   ]
