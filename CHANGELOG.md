@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+## [3.1.0](https://www.github.com/googleapis/google-p12-pem/compare/v3.0.3...v3.1.0) (2021-06-10)
+
+
+### Features
+
+* add `gcf-owl-bot[bot]` to `ignoreAuthors` ([#318](https://www.github.com/googleapis/google-p12-pem/issues/318)) ([e93e51b](https://www.github.com/googleapis/google-p12-pem/commit/e93e51bbbf333161d836cee1a464be93105ed8ca))
+
 ### [3.0.3](https://www.github.com/googleapis/google-p12-pem/compare/v3.0.2...v3.0.3) (2020-09-02)
 
 
