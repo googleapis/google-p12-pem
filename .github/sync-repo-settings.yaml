@@ -1,0 +1,31 @@
+# Rules for master branch protection
+branchProtectionRules:
+  # Identifies the protection rule pattern. Name of the branch to be protected.
+  # Defaults to `master`
+  - pattern: master
+    # Are reviews from code owners required to update matching branches.
+    # Defaults to `false`
+    requiresCodeOwnerReviews: true
+    # Require up to date branches
+    requiresStrictStatusChecks: true
+    # List of required status check contexts that must pass for commits to be accepted to matching branches.
+    requiredStatusCheckContexts:
+      - "ci/kokoro: Samples test",
+      - "ci/kokoro: System test",
+      - "docs",
+      - "lint",
+      - "test (10)",
+      - "test (12)",
+      - "test (14)",
+      - "test (15)",
+      - "cla/google",
+      - "windows",
+      - "OwlBot Post Processor"
+  # List of explicit permissions to add (additive only)
+  permissionRules:
+  - team: yoshi-admins
+    permission: admin
+  - team: yoshi-nodejs-admins
+    permission: admin
+  - team: yoshi-nodejs
+    permission: push
