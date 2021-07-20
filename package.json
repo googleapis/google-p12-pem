@@ -33,7 +33,7 @@
   "author": "Ryan Seys",
   "license": "MIT",
   "dependencies": {
-    "node-forge": "^0.9.0"
+    "node-forge": "^0.10.0"
   },
   "devDependencies": {
     "@compodoc/compodoc": "^1.1.7",
