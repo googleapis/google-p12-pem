@@ -33,7 +33,7 @@
   "author": "Ryan Seys",
   "license": "MIT",
   "dependencies": {
-    "node-forge": "^0.8.0",
+    "node-forge": "^0.10.0",
     "pify": "^4.0.0"
   },
   "devDependencies": {
