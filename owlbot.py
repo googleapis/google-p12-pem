@@ -16,5 +16,5 @@ import synthtool.languages.node as node
 
 node.owlbot_main(templates_excludes=[
   "LICENSE",
-  ".github/release-please.yml"
+  ".github/release-please.yml",
 ])
