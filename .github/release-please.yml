@@ -1,1 +1,4 @@
 releaseType: node
+branches:
+  - releaseType: node
+    branch: 2.x
