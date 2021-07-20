@@ -37,12 +37,11 @@ branchProtectionRules:
       - 'ci/kokoro: System test'
       - docs
       - lint
+      - test (6)
+      - test (8)
       - test (10)
-      - test (12)
-      - test (14)
-      - test (15)
+      - test (11)
       - cla/google
-      - windows
       - OwlBot Post Processor
 permissionRules:
   - team: yoshi-admins
