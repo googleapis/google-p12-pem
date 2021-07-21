@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+### [3.1.1](https://www.github.com/googleapis/google-p12-pem/compare/v3.1.0...v3.1.1) (2021-07-21)
+
+
+### Bug Fixes
+
+* **build:** use updated repository URL ([#355](https://www.github.com/googleapis/google-p12-pem/issues/355)) ([3bcec25](https://www.github.com/googleapis/google-p12-pem/commit/3bcec256a815e76ada58418cac3bbf334621e19d))
+
 ## [3.1.0](https://www.github.com/googleapis/google-p12-pem/compare/v3.0.3...v3.1.0) (2021-06-10)
 
 
