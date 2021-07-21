@@ -19,6 +19,7 @@ set -eo pipefail
 export NPM_CONFIG_PREFIX=/home/node/.npm-global
 
 # Start the releasetool reporter
+python3 -m pip install --upgrade pip
 python3 -m pip install gcp-releasetool
 python3 -m releasetool publish-reporter-script > /tmp/publisher-script; source /tmp/publisher-script
 
