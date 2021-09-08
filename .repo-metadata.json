@@ -4,6 +4,5 @@
   "release_level": "ga",
   "language": "nodejs",
   "repo": "googleapis/google-p12-pem",
-  "distribution_name": "google-p12-pem",
-  "client_documentation": "https://cloud.google.com/nodejs/docs/reference/google-p12-pem/latest"
+  "distribution_name": "google-p12-pem"
 }

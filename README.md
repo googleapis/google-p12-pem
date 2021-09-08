@@ -17,7 +17,7 @@ Convert Google .p12 keys to .pem keys.
 A comprehensive list of changes in each version may be found in
 [the CHANGELOG](https://github.com/googleapis/google-p12-pem/blob/main/CHANGELOG.md).
 
-* [google-p12-pem Node.js Client API Reference][client-docs]
+
 
 * [github.com/googleapis/google-p12-pem](https://github.com/googleapis/google-p12-pem)
 
@@ -85,9 +85,6 @@ Samples are in the [`samples/`](https://github.com/googleapis/google-p12-pem/tre
 
 
 
-The [google-p12-pem Node.js Client API Reference][client-docs] documentation
-also contains samples.
-
 ## Supported Node.js Versions
 
 Our client libraries follow the [Node.js release schedule](https://nodejs.org/en/about/releases/).
@@ -144,7 +141,7 @@ Apache Version 2.0
 
 See [LICENSE](https://github.com/googleapis/google-p12-pem/blob/main/LICENSE)
 
-[client-docs]: https://cloud.google.com/nodejs/docs/reference/google-p12-pem/latest
+
 
 [shell_img]: https://gstatic.com/cloudssh/images/open-btn.png
 [projects]: https://console.cloud.google.com/project
