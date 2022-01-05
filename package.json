@@ -34,13 +34,13 @@
   "author": "Ryan Seys",
   "license": "MIT",
   "dependencies": {
-    "node-forge": "^0.10.0"
+    "node-forge": "^1.0.0"
   },
   "devDependencies": {
     "@compodoc/compodoc": "^1.1.7",
     "@types/mocha": "^8.0.0",
     "@types/node": "^16.0.0",
-    "@types/node-forge": "^0.10.0",
+    "@types/node-forge": "^1.0.0",
     "c8": "^7.4.0",
     "gts": "^3.0.0",
     "linkinator": "^2.0.0",
