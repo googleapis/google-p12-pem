@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+### [3.1.3](https://github.com/googleapis/google-p12-pem/compare/v3.1.2...v3.1.3) (2022-01-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency node-forge to v1 ([#382](https://github.com/googleapis/google-p12-pem/issues/382)) ([078735b](https://github.com/googleapis/google-p12-pem/commit/078735b433d9cdaae463676c4f8c3bb0a7b041b4))
+
 ### [3.1.2](https://www.github.com/googleapis/google-p12-pem/compare/v3.1.1...v3.1.2) (2021-08-11)
 
 
