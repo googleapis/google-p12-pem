@@ -4,6 +4,13 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+### [3.1.4](https://github.com/googleapis/google-p12-pem/compare/v3.1.3...v3.1.4) (2022-04-11)
+
+
+### Bug Fixes
+
+* **deps:** force fixed version of node-forge ([#403](https://github.com/googleapis/google-p12-pem/issues/403)) ([f375cca](https://github.com/googleapis/google-p12-pem/commit/f375cca4008bad392a0a2e88e8c58b30a28beaaf)), closes [#397](https://github.com/googleapis/google-p12-pem/issues/397)
+
 ### [3.1.3](https://github.com/googleapis/google-p12-pem/compare/v3.1.2...v3.1.3) (2022-01-10)
 
 
