@@ -1,52 +1,17 @@
 branchProtectionRules:
   - pattern: main
+    isAdminEnforced: true
+    requiredApprovingReviewCount: 1
     requiresCodeOwnerReviews: true
-    requiresStrictStatusChecks: true
+    requiresStrictStatusChecks: false
     requiredStatusCheckContexts:
-      - 'ci/kokoro: Samples test'
-      - 'ci/kokoro: System test'
+      - "ci/kokoro: Samples test"
+      - "ci/kokoro: System test"
       - docs
       - lint
       - test (10)
       - test (12)
       - test (14)
-      - test (16)
       - cla/google
       - windows
       - OwlBot Post Processor
-  - pattern: 2.x
-    requiresCodeOwnerReviews: true
-    requiresStrictStatusChecks: true
-    requiredStatusCheckContexts:
-      - 'ci/kokoro: Samples test'
-      - 'ci/kokoro: System test'
-      - docs
-      - lint
-      - test (10)
-      - test (12)
-      - test (14)
-      - test (15)
-      - cla/google
-      - windows
-      - OwlBot Post Processor
-  - pattern: 1.x
-    requiresCodeOwnerReviews: true
-    requiresStrictStatusChecks: true
-    requiredStatusCheckContexts:
-      - 'ci/kokoro: Samples test'
-      - 'ci/kokoro: System test'
-      - docs
-      - lint
-      - test (6)
-      - test (8)
-      - test (10)
-      - test (11)
-      - cla/google
-      - OwlBot Post Processor
-permissionRules:
-  - team: yoshi-admins
-    permission: admin
-  - team: yoshi-nodejs-admins
-    permission: admin
-  - team: yoshi-nodejs
-    permission: push
