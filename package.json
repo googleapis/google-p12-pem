@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@compodoc/compodoc": "^1.1.7",
-    "@types/mocha": "^8.0.0",
+    "@types/mocha": "^9.0.0",
     "@types/node": "^16.0.0",
     "@types/node-forge": "^1.0.1",
     "c8": "^7.4.0",
