@@ -14,7 +14,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "google-p12-pem": "^3.1.4"
+    "google-p12-pem": "^4.0.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
