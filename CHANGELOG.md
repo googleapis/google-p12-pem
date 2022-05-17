@@ -4,6 +4,17 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+## [4.0.0](https://github.com/googleapis/google-p12-pem/compare/v3.1.4...v4.0.0) (2022-05-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* update library to use Node 12 (#410)
+
+### Build System
+
+* update library to use Node 12 ([#410](https://github.com/googleapis/google-p12-pem/issues/410)) ([e5a823a](https://github.com/googleapis/google-p12-pem/commit/e5a823afb2cf37bd879af251146ea3dfc4f6281d))
+
 ### [3.1.4](https://github.com/googleapis/google-p12-pem/compare/v3.1.3...v3.1.4) (2022-04-11)
 
 
