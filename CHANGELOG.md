@@ -4,6 +4,17 @@
 
 [1]: https://www.npmjs.com/package/google-p12-pem?activeTab=versions
 
+## [5.0.0](https://github.com/googleapis/google-p12-pem/compare/v4.0.1...v5.0.0) (2023-08-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to Node 14 ([#435](https://github.com/googleapis/google-p12-pem/issues/435))
+
+### Miscellaneous Chores
+
+* Upgrade to Node 14 ([#435](https://github.com/googleapis/google-p12-pem/issues/435)) ([0355f8a](https://github.com/googleapis/google-p12-pem/commit/0355f8a2d335133a62e71a87c56dd68eac68ef4f))
+
 ## [4.0.1](https://github.com/googleapis/google-p12-pem/compare/v4.0.0...v4.0.1) (2022-08-23)
 
 
