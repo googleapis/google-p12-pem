@@ -43,7 +43,7 @@
     "@types/node-forge": "^1.0.1",
     "c8": "^9.0.0",
     "gts": "^5.0.0",
-    "linkinator": "^4.0.0",
+    "linkinator": "^3.0.0",
     "mocha": "^9.2.2",
     "typescript": "^5.1.6"
   },
