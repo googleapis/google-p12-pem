@@ -1,4 +1,8 @@
 title: # google-p12-pem
+introduction:
+    **_THIS REPOSITORY AND PACKAGE WILL BE DEPRECATED IN JULY 2024_**
+    
+    Convert Google .p12 keys to .pem keys.
 body: |-
     #### CLI style
 
